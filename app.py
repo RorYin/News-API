@@ -48,12 +48,13 @@ def getdata(query):
 
         for a in range(0,len(i)):
             t=i[a]
-            p=t.findAll("p")
+            p=t.findAll("p") 
             temp=p[1].text
             temp2=temp.replace('\n','')
+                               
             temp3=temp2.replace("                                           ",'')
             headline=i[a].h3.text
-            paragraph=temp3.replace("                                            ",'')
+            paragraph=temp3.replace("                                         ",'')
             image_url=i[a].img["data-lazy-src"]
             source_url=i[a].a['href']
         
