@@ -102,3 +102,22 @@ Note:This is a part of the actual response ,since the actual response is huge
 ## **Star the Repo in case you liked it :)**
 ### © [Dhanush N (RorYin)](https://github.com/RorYin)
 
+<br><br>
+## An Android app "NewsSinge" based on this api 
+click on the icon to download app 👇
+<br>
+
+<section>
+<center>
+<a href="https://drive.google.com/file/d/1f0nxM_h0Thai7XsXwQ8kKIcM8-j6BdgG/view?usp=drivesdk">
+<img src="https://res.cloudinary.com/dmf10mbeg/image/upload/c_scale,r_30,w_96/v1604421890/newssinge_pwh6zv.jpg" alt="NewsSinge>
+
+</center>
+  </a>
+  </section>
+
+
+
+
+
+
