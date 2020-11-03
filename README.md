@@ -14,7 +14,7 @@ Else if you wish to deploy to Heroku ,the link  will be 👇 (scroll down to see
  https://baseurl.herokuapp.com/
  ```
 <br>
-## How to pass query
+How to pass query
 <br>
 <br>
 
@@ -49,6 +49,12 @@ Example :
 ```
 Heroku: https://baseurl.herokuapp.com/?q=world
 Local Server: http://127.0.0.1:5000/?q=world
+```
+
+You can also give any topic name as query , example:
+```
+Heroku: https://baseurl.herokuapp.com/?q=pubg
+Local Server: http://127.0.0.1:5000/?q=pubg
 ```
 
 Sample Responses:
