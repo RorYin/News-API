@@ -1,0 +1,11 @@
+{
+    "name": "News-API",
+    "description": "Get latest / related topic NEWS as JSON output",
+    "author": "Dhanush N",
+    "keywords": [
+        "flask",
+        "python",
+        "News-API"
+    ],
+    "repository": "https://github.com/RorYin/News-API"
+}
