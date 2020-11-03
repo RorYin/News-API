@@ -88,6 +88,11 @@ Sample Responses:
 
 Note:This is a part of the actual response ,since the actual response is huge 
 ```
+<br>
+
+##  Please Note:This is for educational purposes only ,do not abuse it, by using it for any other purposes.
+<br>
+
 
 ## Get your baseurl by deploying to heroku 👇
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RorYin/News-API/tree/main)
@@ -95,5 +100,5 @@ Note:This is a part of the actual response ,since the actual response is huge
 <br>
 
 ## **Star the Repo in case you liked it :)**
-### © [Dhanush N](https://github.com/RorYin)
+### © [Dhanush N (RorYin)](https://github.com/RorYin)
 
