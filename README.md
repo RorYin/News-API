@@ -97,14 +97,20 @@ Note:This is a part of the actual response ,since the actual response is huge
 ## Get your baseurl by deploying to heroku 👇
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RorYin/News-API/tree/main)
 <br><br>
-## An Android app "NewsSinge" based on this api 
-click on the icon to download app 👇
-<br>
 
 ## A WebApp Based on this api
 
 [![WebApp](https://telegra.ph/file/2de4610e5b18844162868.png)](https://roryinsnewsapp.herokuapp.com/)
 <br>
+## A Telegram Bot Based on this api
+
+[![TGBot](https://telegra.ph/file/5077ff69500f7885c0833.jpg)](https://t.me/indian_news_robot)
+<br>
+## An Android app "NewsSinge" based on this api 
+click on the icon to download app 👇
+<br>
+
+
 
 
 [![Deploy](https://res.cloudinary.com/dmf10mbeg/image/upload/c_scale,r_30,w_96/v1604421890/newssinge_pwh6zv.jpg)](https://drive.google.com/file/d/1f0nxM_h0Thai7XsXwQ8kKIcM8-j6BdgG/view?usp=drivesdk)
