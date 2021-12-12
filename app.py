@@ -1,3 +1,4 @@
+from os import replace
 import requests
 import bs4
 from flask import Flask,jsonify,request
@@ -45,6 +46,7 @@ def getdata(query):
             return "Please enter a keyword or a valid topic"
         soup = bs4.BeautifulSoup(res,'lxml')
         i = soup.find_all('li',class_=cl)
+        print(i)
 
         for a in range(0,len(i)):
             t=i[a]
@@ -52,14 +54,18 @@ def getdata(query):
             temp=p[1].text
             temp2=temp.replace('\n','')
                                
-            temp3=temp2.replace("                                           ",'')
+            temp3=temp2.strip()
             headline=i[a].h3.text
-            paragraph=temp3.replace("                                         ",'')
+            paragraph=temp3.strip()
             image_url=i[a].img["data-lazy-src"]
             source_url=i[a].a['href']
-        
+            date=p[0].text
+            date=date.replace('<a href="https://www.india.com/author/newsdesk/">India.com </a>',"")
+            date=date.replace("\nIndia.com News Desk\n","")
+            date=date.replace("India.com","")
+            date=date.strip()
 
-            result={"headline":headline ,"paragraph":paragraph,"image url":image_url,"source url":source_url}
+            result={"headline":headline ,"paragraph":paragraph,"image url":image_url,"source url":source_url,"date":date}
             output.append(result)
         
     #print(output)
@@ -69,7 +75,7 @@ def getdata(query):
 @app.route('/')
 def home():
     query=request.args.get('q')
-    out="Thank You for using api,you have sucessfully deployed it \nHead over to documentation to know how to use api https://github.com/RorYin/COVID19Statsapi"
+    out="Thank You for using api,you have sucessfully deployed it \nHead over to documentation to know how to use api https://github.com/RorYin/News-API"
     if query == None:
         return out
     else:
