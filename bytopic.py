@@ -13,26 +13,33 @@ def getdata(query):
         try:
 
             res = requests.get(url+f"{k}"+'/',headers).text
+           
         except:
             
             return result
 
         soup = bs4.BeautifulSoup(res,'lxml')
         i = soup.find_all('li',class_="contentblk blkwrp")
-
+        
         for a in range(0,len(i)):
             p=i[a].findAll("p")
             headline=i[a].img['title']
             paragraph=p[1].text
             image_url=i[a].img["data-lazy-src"]
             source_url=i[a].a['href']
-            
+            date=p[0].text
+            date=date.replace('<a href="https://www.india.com/author/newsdesk/">India.com </a>',"")
+            date=date.replace("\nIndia.com News Desk\n","")
+            date=date.replace("India.com","")
+            date=date.strip()
 
-            result={"headline":headline ,"paragraph":paragraph,"image url":image_url,"source url":source_url}
+            result={"headline":headline ,"paragraph":paragraph,"image url":image_url,"source url":source_url,"date":date}
             output.append(result)
         
     
     return output
+
+
 
 
 
