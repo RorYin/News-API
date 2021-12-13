@@ -15,7 +15,7 @@ def getdata(query):
        
     switch={
         "entertainment":"https://www.india.com/entertainment/page",
-        "top news":"https://www.india.com/news/india/page",
+        "topnews":"https://www.india.com/news/india/page",
         "world":"https://www.india.com/news/world/page",
         "business":"https://www.india.com/business/page",
         "education":"https://www.india.com/education/page",
