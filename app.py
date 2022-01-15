@@ -8,7 +8,7 @@ from flask import Flask,jsonify,request
 app = Flask(__name__)
 app.url_map.strict_slashes=False
 
-url="https://www.india.com/news/world/page/"
+
 
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'}
 
