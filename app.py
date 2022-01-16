@@ -13,6 +13,7 @@ app.url_map.strict_slashes=False
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'}
 
 def getdata(query):
+    result = "Something went wrong"
     
     url="https://www.india.com/topic/"+query+"/page/"
     output=[]
@@ -32,11 +33,15 @@ def getdata(query):
         i = soup.find_all('li',class_="contentblk blkwrp")
         
         for a in range(0,len(i)):
+            #p is a list that has all the content that is in <p> tag
             p=i[a].findAll("p")
             headline=i[a].img['title']
+            #we need only paragraph ,so we take only the first content inside the <p> tag
             paragraph=p[1].text
+
             image_url=i[a].img["data-lazy-src"]
             source_url=i[a].a['href']
+            
             date=p[0].text
             date=date.replace('<a href="https://www.india.com/author/newsdesk/">India.com </a>',"")
             date=date.replace("\nIndia.com News Desk\n","")
@@ -50,7 +55,7 @@ def getdata(query):
     return output
     
     
-
+ 
     
 
 
